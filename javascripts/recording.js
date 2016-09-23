@@ -90,7 +90,7 @@ function DeviceSelect(e) {
 			var audioInput = realAudioInput;
 			
 			var inputPoint = audioContext.createGain();
-			inputPoint.gain.value = 1.0;
+			inputPoint.gain.value = 0.0;
 			audioInput.connect(inputPoint);
 			
 			var analyserNode = audioContext.createAnalyser();
