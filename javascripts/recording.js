@@ -90,7 +90,6 @@ function DeviceSelect(e) {
 			var audioInput = realAudioInput;
 			
 			var inputPoint = audioContext.createGain();
-			inputPoint.gain.value = 1.0;
 			audioInput.connect(inputPoint);
 			
 			var analyserNode = audioContext.createAnalyser();
@@ -99,8 +98,10 @@ function DeviceSelect(e) {
 			
 			audioRecorder = new Recorder( inputPoint ); // this fuck what the fuck
 			// speak / headphone feedback initial settings
-			
-			inputPoint.connect(audioContext.destination);
+			zeroGain = audioContext.createGain();
+			zeroGain.gain.value = 0.0;
+			inputPoint.connect( zeroGain );
+			zeroGain.connect(audioContext.destination);
 			return audioRecorder;
 		}
 		
