@@ -1,0 +1,135 @@
+body {
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+header, nav, article, section, footer, aside {
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif; 
+}
+
+header {
+	background-color: black;
+	color: white;
+	height: 70px;
+}
+
+nav {
+	background-color: darkgray;
+}
+
+aside {
+	float:left; 
+	width: 20%;
+	background-color: #EEEEE0;
+	height: 80px;
+	box-shadow: inset 0 0 5px black;
+}
+
+section {
+	float:left;
+	width: 100%;
+	height: 580px;
+	background-color: #EEEEE0;
+	overflow-y: auto; 
+	overflow-x: auto;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+header, footer { 
+	width:100%; 
+	clear:both; 
+}
+
+h1, ul, h2, h3 {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+ul li {
+	list-style: disc;
+	padding-left: 1em;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 14pt;
+}
+
+h3 {
+	display: inline-block;
+	font-size: 14pt;
+	color: orange;
+}
+
+img {
+	width: 21px; 
+	height: 21px;
+}
+
+canvas {	
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	width: 80%;
+	height: 80px;
+	box-shadow: inset 0 0 5px black;
+	vertical-align: top;
+}
+
+#main {
+	width : 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+#addTrack {
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+}
+
+.checkbox {
+	width: 21px;
+	height: 21px;
+	margin: 0px;
+}
+
+
+.track {
+	height: 80px;
+	box-shadow: inset 0 0 5px black;
+}
+
+b { font-weight: bold; }
+		
+.key { 
+	position: absolute; font-family: Helvetica; font-weight: 100; font-size: 12px;
+	border: 1px solid rgba(32,32,32,0.2);
+	border-radius: 0px 0px 5px 5px;
+	cursor:pointer;
+	-webkit-transition: margin 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease; 
+}
+			
+.key:hover { background-color: rgb(255,192,32); }
+				
+.key .label { position: absolute; bottom: 5px; text-align: center; left: 0px; right: 0px; }
+		
+.black { background-color: rgb(32,32,32); color: #ffffff; z-index: 1; text-shadow: 0px -1px 1px rgba(255,255,255,0.5); }
+		
+.white { background-color: #ffffff; color: rgb(32,32,32); z-index: 0; text-shadow: 0px 1px 1px rgba(32,32,32,0.5); }
+			
+.title { text-shadow: 0px 1px 1px rgba(32,32,32,0.2); font-size: 40px; font-weight: bold; font-family: Helvetica; padding: 10px; text-align: center; }
+			
+.keyboard-options { margin: 0px auto; width: auto; text-align: center; font-size: 12px; font-weight: 200; padding:10px; }
+			
+.keyboard-holder { margin: 0px auto; height: 200px; position:relative; user-select:none; -webkit-user-select:none;-moz-user-select:none;-o-user-select:none; }
