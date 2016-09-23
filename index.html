@@ -53,27 +53,6 @@
 		</section>
 
 		<footer>
-			<h1>Instrument</h1>
-			<div>
-				<select ID="sound">
-					<option value="0" selected>Keyboard</option>
-					<option value="1">Organ</option>
-					<option value="2">Acoustic Guitar</option>
-					<option value="3">EDM, bro!</option>
-				</select>
-				<span class="keyboard-options">
-					Range [C<span ID="OCTAVE_LOWER">3</span>-B<span ID="OCTAVE_UPPER">5</span>]
-					<input type="button" ID="-_OCTAVE" value="-" />
-					<input type="button" ID="+_OCTAVE" value="+" /><br />
-					<i>(Use left/right arrows to adjust with keyboard)</i>
-				</span>
-				<div ID="keyboard" class="keyboard-holder"></div>
-			
-			</div>
-			<script type="text/javascript">
-				var a = new AudioSynthView();
-				a.draw();
-			</script>
 		</footer>
 		<script src="javascripts/adapter.js"></script>
 		<script src="javascripts/recorderjs/recorder.js"></script>
